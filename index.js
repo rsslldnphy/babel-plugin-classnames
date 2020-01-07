@@ -26,7 +26,7 @@ function babelPluginClassNames({ types: t }) {
         }
       },
       JSXAttribute(path, state) {
-        if (path.node.name.name !== 'className') {
+        if (path.node.name.name !== (state.opts.propName || 'className')) {
           return
         }
 

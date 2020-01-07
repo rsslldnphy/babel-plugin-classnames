@@ -59,3 +59,13 @@ If the function you want to use is not the default package export you can use th
   ]
 }
 ```
+
+If you want to use a prop other than `className` (such as `classes`) you can use the `propName` option:
+
+```JSON
+{
+  "plugins": [
+    ["babel-plugin-classnames", { "propName": "classes" }]
+  ]
+}
+```
